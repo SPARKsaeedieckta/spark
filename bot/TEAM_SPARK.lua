@@ -415,7 +415,7 @@ Returns user id
 
 !banlist
 لیست کسایی که اخراج شدن
-
+@saeed_ieckta_bot 
 برای توضیحات بیشتر به کانالمون مراجعه کنید { @TEAM_SPARK }
 ]]
   }
