@@ -226,20 +226,20 @@ function create_config( )
     "leave_ban",
     "admin"
     },
-    sudo_users = {110626080,103649648,143723991,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {273810726,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v2 - Open Source
+    about_text = [[spark v1 - Open Source
 An advance Administration bot based on yagop/telegram-bot 
 
-https://github.com/SEEDTEAM/TeleSeed
+https://github.com/SPARKsaeedieckta/spark
 
 Our team!
-Alphonse (@Iwals)
-I M /-\ N (@Imandaneshi)
-Siyanew (@Siyanew)
-Rondoozle (@Potus)
-Seyedan (@Seyedan25)
+Alphonse (@saeed_ieckta_bot)
+I M /-\ N (@saeed_ieckta_bot)
+Siyanew (@saeed_ieckta_bot)
+Rondoozle (@saeed_ieckta_bot)
+Seyedan (@saeed_ieckta_bot)
 
 Special thanks to:
 Juan Potato
@@ -248,21 +248,19 @@ Topkecleon
 Vamptacus
 
 Our channels:
-English: @TeleSeedCH
-Persian: @IranSeed
+English: @TEAM_SPARK
+Persian: @TEAM_SPARK
 ]],
     help_text_realm = [[
 Realm Commands:
 
-!creategroup [name]
-Create a group
-
+!creategroup [name]	
+ساخت گروه و انتخاب نام آن
 !createrealm [name]
 Create a realm
 
 !setname [name]
-Set realm name
-
+قرار دادن اسم گروه 
 !setabout [group_id] [text]
 Set a group's about text
 
@@ -297,7 +295,7 @@ Promote an admin by id OR username *Sudo only
 Demote an admin by id OR username *Sudo only
 
 !list groups
-Get a list of all groups
+لیست گروه
 
 !list realms
 Get a list of all realms
@@ -327,14 +325,13 @@ This command will send text to [group_id]
 Commands list :
 
 !kick [username|id]
-You can also do it by reply
+اخراج فرد مورد نظر
 
 !ban [ username|id]
-You can also do it by reply
+اضافه به لیست بلاکی ها
 
 !unban [id]
-You can also do it by reply
-
+خارج کردن از لیست بلاکی
 !who
 Members list
 
@@ -342,37 +339,37 @@ Members list
 Moderators list
 
 !promote [username]
-Promote someone
+ادمین کردن
 
 !demote [username]
-Demote someone
+برداشتن از ادمینی
 
 !kickme
-Will kick user
+اخراج خود
 
 !about
-Group description
+درباره ی گروه
 
 !setphoto
-Set and locks group photo
+قرار دادن عکس پروفایل برای گروه
 
 !setname [name]
-Set group name
+انتخاب نام برای گروه
 
 !rules
-Group rules
+دستورات گروه
 
 !id
 Return group id or user id
 
 !help
-Get commands list
+راهنما
 
-!lock [member|name|bots|leave] 
-Locks [member|name|bots|leaveing] 
+!lock [links|member|name|bots|leave] 
+قفل [links|member|name|bots|leaveing] 
 
-!unlock [member|name|bots|leave]
-Unlocks [member|name|bots|leaving]
+!unlock [links|member|name|bots|leave]
+غیر فعال کردن قفل [links|member|name|bots|leaving]
 
 !set rules [text]
 Set [text] as rules
@@ -381,19 +378,19 @@ Set [text] as rules
 Set [text] as about
 
 !settings
-Returns group settings
+تنظیمات گروه
 
 !newlink
-Create/revoke your group link
+ساخت لینک جدید برای گروه
 
 !link
-Returns group link
+لینک گروه
 
 !owner
-Returns group owner id
+نشان دادن صاحب گروه
 
 !setowner [id]
-Will set id as owner
+قرار دادن شخص برای صاحب گروه
 
 !setflood [value]
 Set [value] as flood sensitivity
@@ -414,19 +411,12 @@ Will clear [modlist|rules|about] and set it to nil
 Returns user id
 
 !log
-Will return group logs
+کل پیام هایی که از اول فرستاده شده بصورت یک فایل
 
 !banlist
-Will return group ban list
+لیست کسایی که اخراج شدن
 
-» U can use both "/" and "!" 
-
-» Only mods, owner and admin can add bots in group
-
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-» Only owner can use res,setowner,promote,demote and log commands
-
+برای توضیحات بیشتر به کانالمون مراجعه کنید { @TEAM_SPARK }
 ]]
   }
   serialize_to_file(config, './data/config.lua')
