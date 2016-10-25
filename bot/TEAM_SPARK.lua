@@ -260,7 +260,7 @@ Realm Commands:
 Create a realm
 
 !setname [name]
-قرار دادن اسم گروه 
+قرار  دادن اسم گروه 
 !setabout [group_id] [text]
 Set a group's about text
 
