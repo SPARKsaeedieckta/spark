@@ -225,7 +225,7 @@ function create_config( )
     "all",
     "leave_ban",
     "admin"
-    },
+   },
     sudo_users = {273810726,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
@@ -312,14 +312,7 @@ Send text to all groups
 !bc 123456789 Hello !
 This command will send text to [group_id]
 
-» U can use both "/" and "!" 
-
-» Only mods, owner and admin can add bots in group
-
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-» Only owner can use res,setowner,promote,demote and log commands
-
+| @TEAM_SPARK |
 ]],
     help_text = [[
 Commands list :
